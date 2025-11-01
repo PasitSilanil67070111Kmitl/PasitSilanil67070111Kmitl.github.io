@@ -18,11 +18,11 @@ header p {
   font-size: 1.2em;
 }
 
-.center{
-    text-align: center;
+.center {
+  text-align: center;
 }
 
-/* Cards */
+/* Card */
 .card {
   background-color: white;
   border-radius: 12px;
@@ -83,6 +83,15 @@ header p {
   padding: 10px;
 }
 
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+
 .card-link {
   background: #1a73e8;
   color: white;
@@ -95,10 +104,10 @@ header p {
   gap: 12px;
   cursor: pointer;
   transition: transform 0.2s, background 0.3s;
-
   height: 80px;
   width: 100%;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .card-link:hover {
@@ -112,13 +121,6 @@ header p {
   object-fit: contain;
   flex-shrink: 0;
 }
-
-.card-link .text {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
 
 /* Team Section */
 .container {
@@ -134,16 +136,28 @@ header p {
   border: 1px solid #ccc;
   border-radius: 12px;
   width: 200px;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden; /* ป้องกันรูปภาพล้นกรอบ */
 }
 
 .profile img {
-  width: 100%;
-  border-radius: 50%;
+  width: 120px;              /* จำกัดขนาดรูป */
+  height: 120px;             /* ให้เป็นสี่เหลี่ยมจัตุรัส */
+  object-fit: cover;         /* ครอบรูปให้เต็มโดยไม่บิด */
+  border-radius: 50%;        /* ทำให้เป็นวงกลม */
+  margin-bottom: 10px;
+  border: 3px solid #1a73e8; /* เพิ่มขอบน้ำเงินสวย ๆ */
 }
 
 .profile .info p {
   margin: 5px 0;
 }
+
+.profile .info p:first-child {
+  color: #1a73e8; /* สีน้ำเงินฟ้า */
+  font-weight: bold; /* ตัวหนาเพื่อเด่นขึ้น */
+}
+
+
