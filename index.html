@@ -79,7 +79,7 @@ HI = -42.379
 
     <div class="card">
       <h2>การส่งข้อมูลเข้า Telegram</h2>
-      <p>การส่งแจ้งเตือนใน telegram ใช้วิธีการส่งผ่าน bot ส่งแจ้งเตือนลงใน channel ซึ่งสามารถแจ้งเตือนเรื่องดัชนีความร้อนได้โดยที่ผู้ใช้ไม่ต้องเปิดหน้าจอดูเอง</p>
+      <p> เรามี token ที่ไว้เข้าถึง bot และ channel ID ปลายทางที่เราต้องส่ง โดยเราส่งด้วยโปรโตคอลHTTPS เมื่อเราส่งเราจะส่งไปที่ปลายทาง api.telegram.org/bot"botID"/sendMessage (ซึ่งทำหน้าที่ส่งข้อความ) แล้วในpayloadที่ส่งก็จะมี Chat ID(Channel ID)ที่คอยบอกว่าข้อความนี้จะถูกส่งไป Channel ไหน และข้อความที่เราจะส่ง</p>
     </div>
     <div class="card">
       <h2>Telegram Notification</h2>
@@ -88,6 +88,7 @@ HI = -42.379
     <div class="card">
       <h2>Conditions for Display</h2>
       <img src="picture/4.png">
+      <p>เราเอาข้อมูลอุณหภูมิความร้อนที่วัดได้จาก sensor มาเปรียบเทียบกับ ค่าดัชนีความร้อน เเล้วจะเเสดงข้อมูลว่าควรทำอย่างไร เช่น ถ้าอุณหภูมิความร้อนอยู่ที่ 36 จะมีการเเจ้งเตือนว่า อากาศค่อนข้างร้อน หมั่นดื่มน้ำ และควรหลีกเลี่ยงทำกิจกรรมกลางแดดติดต่อกันเป็นเวลานาน</p>
       <p><a href="https://www.innovative-instrument.com/heat-index/">https://www.innovative-instrument.com/heat-index/</a></p>
     </div>
     <!-- CONNECTIVITY -->
