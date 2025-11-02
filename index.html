@@ -97,8 +97,10 @@ HI = -42.379
       <img src="picture/connect.png">
       <p>การเชื่อมต่อข้อมูลระหว่างอุปกรณ์เซนเซอร์กับเว็บไซต์และคลาวด์</p>
       <ul>
-        <li>บอร์ด arduino uno r4 wifi ส่งขึ้น thingspeak กับ telegram</li>
-        <li>thingspeak ก็รันโค้ดหน้าเว็ปเพจคำแนะนำค่าดัชนีความร้อน</li>
+        <li>เชื่อมต่อ Arduino Uno R4 กับ WiFi โดยใช้ SSID และ Password</li>
+        <li>ตรวจสอบการเชื่อมต่อจนได้ IP ของอุปกรณ์</li>
+        <li>เชื่อมต่อกับ ThingSpeak เพื่อส่งข้อมูลแบบเรียลไทม์</li>
+        <li>ส่งข้อมูลขึ้น ThingSpeak ทุกครั้งที่อ่านค่าจากเซนเซอร์</li>
       </ul>
       <p>ESP32 → WiFi → ThingSpeak → เว็บไซต์ / Dashboard</p>
     </div>
