@@ -1,0 +1,38 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Uploaded files
+uploads/*
+!uploads/.gitkeep
+
+# Database backups
+*.sql
+*.dump
+*.bak
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
